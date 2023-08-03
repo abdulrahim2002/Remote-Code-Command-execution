@@ -6,8 +6,6 @@ import utility
 import subprocess
 import pyautogui
 
-
-
 parentDir = utility.getpath()
 
 # get server IP
@@ -72,6 +70,7 @@ def handle_client(conn, addr, u_name):
         # if str == "exit()":
         #     exit()
         if str[0]=="!" and str[1]!="!":
+                str = str.replace("`", "\n")
                 pyautogui.write(str[1:], interval = 0.05)
                 continue
         if str[0]== '!' and str[1 == '!']:
@@ -82,7 +81,7 @@ def handle_client(conn, addr, u_name):
             if len(spl)==2:
                 pyautogui.hotkey(spl[0], spl[1])
                 continue
-            
+        # The effect is that calling hotkey('ctrl', 'shift', 'c') would perform a "Ctrl-Shift-C" hotkey/keyboard shortcut press
 
         # result = executeCommand(msg)
         Thr = threading.Thread(target=exec_cmd, args=(msg,))

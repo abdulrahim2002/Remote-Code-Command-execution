@@ -1,0 +1,38 @@
+Instructions:
+
+# add contents
+echo Hello, World! >> my_file.txt
+
+type my_file.txt # display the contents
+
+# make a new file
+echo. > new.txt
+
+# to read contents
+type file.txt 
+
+# notepad commands
+notepad file.txt # opens notepad
+
+# how to write:
+two write, type ! followed by text. To type next line character, type '~'
+
+examples:
+!hi`hi writes "hi\hi"
+
+# how to type shortcuts: 
+start with !! then type keys seprated by ~ for example
+
+!!ctrl~s # save
+!!alt~f4 # close
+
+Note: dont leave any space
+
+keycodes:
+1. windows key: win
+2. control: ctrl
+3. shift: shift
+4. f4: f4
+
+# gcc command to compile code
+gcc -o output input.cd

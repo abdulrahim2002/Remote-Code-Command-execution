@@ -17,7 +17,7 @@ https://github.com/abdulrahim2002/Remote-Code-Command-execution/assets/89011337/
 
 * **Live screen sharing**
 * Remotely **use** **server machine's keyboard**. 
-    e.g. usage: you can open a text file on the remote machine. then you can write anything in that text file using !! before your text written in prompt. Once done you can save the file using !ctrl~s Command.
+    e.g. usage: you can open a text file on the remote machine. then you can write anything in that text file using !! before your text written in     prompt. Once done you can save the file using !ctrl~s Command.
 
 * Authentication. The server machine is secured by **OTP(one time password)** which is generated at runtime randomly.
   

@@ -24,7 +24,3 @@ https://github.com/abdulrahim2002/Remote-Code-Command-execution/assets/89011337/
 # Working
 The client machine sends commands to server machine, where they get executed, and the result is returned. The client machine can also **write something using server's keyboard**. The client's machine can also **send shortcuts** like ctrl+s(save) and win+d(jump to desktop), alt+tab(next program). The possibilities are endless, with what you can do with it.
 
-## Authors
-
-- [@amrindersingh](co20305@ccet.ac.in)
-- [@abdulrahim2002](co20301@ccet.ac.in)

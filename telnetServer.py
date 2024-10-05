@@ -52,7 +52,6 @@ def exec_cmd(msg):
     print(f'Output: {result}')
     broadcast(result)
 
-# handle client connection
 def handle_client(conn, addr, u_name):
     print(f"[SERVER] [NEW CONNECTION] {u_name}:{addr} connected.")
 
@@ -81,28 +80,19 @@ def handle_client(conn, addr, u_name):
             if len(spl)==2:
                 pyautogui.hotkey(spl[0], spl[1])
                 continue
-        # The effect is that calling hotkey('ctrl', 'shift', 'c') would perform a "Ctrl-Shift-C" hotkey/keyboard shortcut press
 
-        # result = executeCommand(msg)
         Thr = threading.Thread(target=exec_cmd, args=(msg,))
         Thr.start()
-        
-        # time.sleep(0.5)
-        # print(f'Output: {result}')
-        # broadcast(result)
-     
+
     conn.close()
 
-# execute command and return output
 def executeCommand(command):
     result = os.popen(command).read()
     return result
 
 def startVideoStream():
     print('\nStarting video stream...')
-        
     process = subprocess.Popen(['cmd', '/C', 'streamVideo.bat'], creationflags= subprocess.CREATE_NEW_CONSOLE)
-    # exit_code = process.wait()
 
     print(f'Video Stream: Path: http://{IP}:5000')
 

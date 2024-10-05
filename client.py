@@ -2,10 +2,7 @@ import socket
 import threading
 import time
 import utility
-# http://172.20.10.4:5000
-IP = utility.get_ip_address()                # temperory, for same network, both client and server
-# IP = '172.20.10.4'
-# IP = '172.20.10.3'
+IP = utility.get_ip_address()
 
 c_obj = threading.Condition()
 PORT = 5566

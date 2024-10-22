@@ -1,6 +1,6 @@
 # Remote Code and Command Execution
 
-A python implementation of remote code/command execution. Using the code you can connect 2 machines and remotely execute commands from one machine to another. Initially implemented as telnet client, It also features live video streaming/screen sharing. Which means that while executing commands on the remote machine you can see what change those executions are making. **Batch scripts are used to file programs within programs**.
+A python implementation of remote code/command execution. Using which you can connect 2 machines and remotely execute commands from one machine to another. Initially implemented as telnet client, It also features live video streaming/screen sharing. Which means that while executing commands on the remote machine you can see what change those executions are making. **Batch scripts are used to file programs within programs**.
 
 # Video Demonstration
 
